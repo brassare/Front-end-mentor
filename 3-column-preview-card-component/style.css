@@ -5,22 +5,29 @@
   --Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
   --Very-lightgray: hsl(0, 0%, 95%); /*background, titulos, buttons*/
 
-  --font-size: 20px;
-  --font-family: "Lexend Deca", "Big Shoulders Display", sans-serif;
+  --font-size: 15px;
+  --title-font-family: "Big Shoulders Display", sans-serif;
+  --font-family: "Lexend Deca", sans-serif;
 }
 
-/*Body*/
+* {
+  box-sizing: border-box;
+}
 
-.body {
+html {
   font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+body {
   background-color: var(--Very-lightgray);
   min-height: 100vh;
   display: grid;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
-/*Container*/
 .container {
   display: grid;
   grid-template-areas:
@@ -34,205 +41,84 @@
   overflow: hidden;
 }
 
-/*Divisões*/
-
-.div {
-  display: none;
-}
-
 .tipos__carros {
   display: grid;
   padding: 50px;
-  font-family: var(--font-family);
-  font-size: var(--font-size);
+  align-items: center;
 }
 
 .sedans {
   background-color: var(--Bright-orange);
   grid-area: sedans;
 }
+
 .suvs {
   background-color: var(--Dark-cyan);
   grid-area: suvs;
 }
+
 .luxury {
   background-color: var(--Very-darkcyan);
   grid-area: luxury;
 }
 
-/*Titulo*/
-
 .titulo__principal {
   color: var(--Very-lightgray);
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  margin: 5px 0;
-  padding: 5px 0;
+  font-family: var(--title-font-family);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 25px 0;
 }
 
-/*Parágrafo*/
 p {
   color: var(--Transparent-white);
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  margin: auto;
-  padding: 0 20px 0 0;
+  line-height: 1.8rem;
 }
 
-/*Botões*/
-
-a {
-  width: 200px;
-}
 .botao {
   text-decoration: none;
   background-color: var(--Very-lightgray);
   border-radius: 30px;
-  display: block;
   margin-top: 30px;
-  padding: 15px 50px;
+  padding: 15px 0;
   text-align: center;
+  width: 150px;
+  border: 2px solid var(--Very-lightgray);
+}
+
+.botao:active {
+  background: transparent;
+  color: var(--Very-lightgray);
+  border: 2px solid var(--Very-lightgray);
 }
 
 .botao__sedans {
   color: var(--Bright-orange);
 }
+
 .botao__suvs {
   color: var(--Dark-cyan);
 }
+
 .botao__luxury {
   color: var(--Very-darkcyan);
 }
 
-@media only screen and (min-width: 375px) {
-  div {
-    display: block;
-  }
-  a {
-    width: 150px;
-  }
-  .botao {
-    width: 50px;
-    height: 10px;
-    text-align: center;
-    
-  }
-}
-
-@media only screen and (min-width: 425px) {
-  div {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  div {
-    display: block;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
-  body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
   .container {
-    display: flex;
-    justify-content: center;
-     
-   }
+    grid-template-areas: "sedans suvs luxury";
+    width: 930px;
+  }
+
   .tipos__carros {
-    width: 30%;
-    height: 500px;
+    height: 600px;
   }
 
   .titulo__principal {
-    margin: 0px;
-    padding: 0px;
-  }
-  p {
-    margin: 0px;
-    padding: 0px;
-  }
-  .botao {
-    padding: 0px;
-    text-align: center;
-    height: 50px;
     margin: 0;
-    width: 200px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    
-   }
-  
-  .tipos__carros {
-    width: 30%;
-    height: 500px;
   }
 
-  .titulo__principal {
-    margin: 0px;
-    padding: 0px;
-  }
   p {
-    margin: 0px;
-    padding: 0px;
-  }
-  .botao {
-    padding: 0px;
-    text-align: center;
-    height: 50px;
-    margin: 0;
-    width: 200px;
-
-  }
-}
-@media only screen and (min-width: 1920px) {
-  body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: center;
-    
-  }
-  .tipos__carros {
-    width: 30%;
-    height: 500px;
-  }
-
-  .titulo__principal {
-    margin: 0px;
-    padding: 0px;
-  }
-  p {
-    margin: 0px;
-    padding: 0px;
-  }
-  .botao {
-    padding: 0px;
-    text-align: center;
-    height: 50px;
-    width: 200px;
-    margin: 0;
+    margin: 0 0 50px;
   }
 }
