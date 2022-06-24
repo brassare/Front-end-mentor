@@ -4,9 +4,9 @@
   --Dark-grayish-blue: hsl(210, 10%, 33%);
   --Grayish-blue: hsl(201, 11%, 66%);
 
-  font-size: 18px;
+  --font-size: 18px;
 
-  font-family: "Bai Jamjuree", sans-serif;
+  --font-family: "Bai Jamjuree", sans-serif;
 }
 
 * {
@@ -20,7 +20,8 @@ html {
 
 body {
   background: no-repeat url(images/bg-header-mobile.png);
-  margin: 0;
+  background-size: contain;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -48,27 +49,26 @@ p {
   color: var(--Grayish-blue);
   margin-bottom: 30px;
 }
-.clipboard__bottom {
+.clipboard__buttom {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color: var(--Strong-Cyan);
   color: white;
   border-radius: 30px;
-  padding: 10px 0;
-  text-align: center;
-  width: 80vw;
+  border-bottom-style: outset;
+  border-width: 3px;
+  border-bottom-color: var(--Strong-Cyan);
+  padding: 10px;
+  width: 250px;
   text-decoration: none;
-  margin: 0 auto 20px;
-}
-.clipboard__bottom-cyan {
-  background-color: var(--Strong-Cyan);
+  margin: 30px auto;
 }
 
-.clipboard__bottom-blue {
+.clipboard__buttom-blue {
   background-color: var(--Light-Blue);
-  margin-bottom: 80px;
+  border-bottom-style: outset;
+  border-bottom-color: var(--Light-Blue);
 }
-
 .clipboard__images {
   display: block;
   margin: 50px auto 40px;
@@ -101,11 +101,9 @@ li {
   width: 60px;
 }
 
-
 .footer__list {
   margin: 30px auto;
   padding-right: 40px;
-  
 }
 .footer__midiasocial {
   display: flex;
@@ -113,6 +111,3 @@ li {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
-
-
-
