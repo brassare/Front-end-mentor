@@ -38,7 +38,7 @@ body {
 
 .clipboard__logo {
   display: block;
-  margin: 50px auto 40px;
+  margin: 50px auto;
 }
 
 h2 {
@@ -55,9 +55,7 @@ p {
   background-color: var(--Strong-Cyan);
   color: white;
   border-radius: 30px;
-  border-bottom-style: outset;
-  border-width: 3px;
-  border-bottom-color: var(--Strong-Cyan);
+  border-bottom: outset 3px var(--Strong-Cyan);
   padding: 10px;
   width: 250px;
   text-decoration: none;
@@ -66,13 +64,16 @@ p {
 
 .clipboard__buttom-blue {
   background-color: var(--Light-Blue);
-  border-bottom-style: outset;
-  border-bottom-color: var(--Light-Blue);
+  border-bottom: outset var(--Dark-grayish-blue);
+  
+}
+.clipboard__images--devices{
+  margin: 0 auto;
+  width: 250px;
 }
 .clipboard__images {
-  display: block;
-  margin: 50px auto 40px;
-  width: 80%;
+  margin: 0px auto ;
+  width: 40px;
 }
 .clipboard__devices {
   margin-top: 150px;
@@ -95,19 +96,12 @@ li {
   text-align: center;
 }
 
-.clipboard__footer {
-  display: block;
-  margin: 50px auto;
-  width: 60px;
+footer { 
+  margin: 150px auto;
 }
 
-.footer__list {
-  margin: 30px auto;
-  padding-right: 40px;
+.footer__logo {
+  display: block;
+  margin: 0 auto;
 }
-.footer__midiasocial {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
-}
+
