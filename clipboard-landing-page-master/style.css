@@ -27,8 +27,7 @@ body {
 
 .container {
   padding: 0;
-  margin: 0 auto;
-  overflow: hidden;
+  margin: 0 auto; /* necessario ter ? ou so no body? */
 }
 .clipboard__logo {
   display: block;
@@ -44,15 +43,21 @@ h2,
 h3,
 h4 {
   color: var(--Dark-grayish-blue);
-  margin: 0 auto 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
 p {
   color: var(--Grayish-blue);
-  margin: 0 20px 30px;
+  margin: 0px 0px 30px;
+  text-align: center;
 }
-.clipboard__buttom {
+
+.buttom {
   display: flex;
   flex-direction: column;
+}
+.clipboard__buttom {
   background-color: var(--Strong-Cyan);
   color: white;
   border-radius: 30px;
@@ -64,7 +69,7 @@ p {
   text-align: center;
 }
 
-.clipboard__buttom-blue {
+.clipboard__buttom--blue {
   background-color: var(--Light-Blue);
   border-bottom: outset var(--Dark-grayish-blue);
 }
@@ -75,6 +80,7 @@ p {
 .clipboard__images--devices {
   margin: 30px 0 50px;
   max-width: 250px;
+  
 }
 
 .clipboard__images {
@@ -103,7 +109,6 @@ footer {
   position: absolute;
   width: 100%;
   background-color: rgb(241, 236, 236);
-  
 }
 
 .footer__logo {
@@ -111,7 +116,7 @@ footer {
   margin: 40px auto;
   max-width: 70px;
 }
-ul{
+ul {
   padding: 0px;
   margin: 0px;
 }
@@ -132,4 +137,31 @@ a {
 
 .footer__social_midia--twitter {
   padding: 0 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background: url(images/bg-header-desktop.png) no-repeat;
+  }
+
+  .clipboard__logo {
+    width: 80px;
+  }
+  p {
+    margin: 0px;
+    padding: 0 500px;
+    font-size: 12px;
+  }
+  .buttom {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .clipboard__buttom {
+    margin: 0px 10px;
+    width: 180px;
+    height: 40px;
+  }
+  
 }
