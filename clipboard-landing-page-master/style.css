@@ -163,5 +163,29 @@ a {
     width: 180px;
     height: 40px;
   }
+
+
+
+
+
+
+
+
   
+  .clipboard__images--access {
+    max-width: 600px;
+  }
+  .test1 {
+    display: flex;
+  }
+  
+  
+  
+
+  .comapanies__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
 }
