@@ -25,10 +25,7 @@ body {
   width: 100%;
 }
 
-.container {
-  padding: 0;
-  margin: 0 auto; /* necessario ter ? ou so no body? */
-}
+
 .clipboard__logo {
   display: block;
   margin: 100px auto 50px;
