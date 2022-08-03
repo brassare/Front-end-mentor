@@ -19,57 +19,58 @@ html {
 }
 
 body {
-  background: no-repeat url(images/bg-header-mobile.png);
+  background: url(images/bg-header-mobile.png) no-repeat;
   background-size: contain;
   margin: 0 auto;
-  width: 100%;
 }
 
-
-.clipboard__logo {
+/*Inicio da class Banner */
+.banner {
+  padding: 0 15px;
+}
+.banner__logo {
   display: block;
-  margin: 100px auto 50px;
+  margin: 150px auto 70px;
 }
 
-.clipboard {
+.banner__title {
+  margin: 0;
   text-align: center;
-}
-
-h1,
-h2,
-h3,
-h4 {
   color: var(--Dark-grayish-blue);
-  margin-bottom: 20px;
-  text-align: center;
 }
 
-p {
+.banner__paragraph {
+  text-align: center;
   color: var(--Grayish-blue);
-  margin: 0px 0px 30px;
-  text-align: center;
 }
+/*Fim da class Banner */
 
-.buttom {
+/*Inicio buttons*/
+.buttons {
   display: flex;
   flex-direction: column;
-}
-.clipboard__buttom {
-  background-color: var(--Strong-Cyan);
-  color: white;
-  border-radius: 30px;
-  border-bottom: outset 3px var(--Strong-Cyan);
-  padding: 10px;
-  width: 250px;
-  text-decoration: none;
-  margin: 20px auto;
   text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px auto;
 }
 
-.clipboard__buttom--blue {
-  background-color: var(--Light-Blue);
-  border-bottom: outset var(--Dark-grayish-blue);
+.buttons__download {
+  background-color: var(--Strong-Cyan);
+  color: whitesmoke;
+  width: 300px;
+  border-bottom: outset 3px var(--Strong-Cyan);
+  box-shadow: 0px 10px 10px -2px hsl(171, 66%, 44%, 0.2);
 }
+
+.buttons__download--blue {
+  background-color: var(--Light-Blue);
+  color: whitesmoke;
+  border-bottom: outset var(--Dark-grayish-blue);
+  width: 300px;
+}
+
+/*Fim buttons*/
 
 .clipboard__snippets {
   margin-top: 100px;
@@ -77,7 +78,6 @@ p {
 .clipboard__images--devices {
   margin: 30px 0 50px;
   max-width: 250px;
-  
 }
 
 .clipboard__images {
@@ -161,23 +161,12 @@ a {
     height: 40px;
   }
 
-
-
-
-
-
-
-
-  
   .clipboard__images--access {
     max-width: 600px;
   }
   .test1 {
     display: flex;
   }
-  
-  
-  
 
   .comapanies__logo {
     display: flex;
