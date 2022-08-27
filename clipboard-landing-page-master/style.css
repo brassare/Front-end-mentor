@@ -59,15 +59,16 @@ body {
   background-color: var(--Strong-Cyan);
   color: whitesmoke;
   width: 300px;
-  border-bottom: outset 3px var(--Strong-Cyan);
+  border-bottom: outset hsla(171, 66%, 44%, 0.3);
   box-shadow: 0px 10px 10px -2px hsl(171, 66%, 44%, 0.2);
 }
 
 .buttons__download--blue {
   background-color: var(--Light-Blue);
   color: whitesmoke;
-  border-bottom: outset var(--Dark-grayish-blue);
+  border-bottom: outset hsla(233, 100%, 69%, 0.3);
   width: 300px;
+  box-shadow: 0px 10px 10px -2px hsl(233, 100%, 69%, 0.4)
 }
 
 /*Fim buttons*/
